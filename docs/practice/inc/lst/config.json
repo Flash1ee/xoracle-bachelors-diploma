@@ -1,0 +1,80 @@
+{
+    "servers": [{
+            "id": 1,
+            "name": "Server 1",
+            "address": "192.168.0.1",
+            "port": 8080
+        },
+        {
+            "id": 2,
+            "name": "Server 2",
+            "address": "192.168.0.2",
+            "port": 8080
+        }
+    ],
+    "files": [{
+            "filename": "file1.txt",
+            "size": 1024,
+            "block_size": 256,
+            "checksum": "abcdef123456",
+            "blocks": [{
+                    "id": 1,
+                    "checksum": "123456abcdef",
+                    "location": "server1"
+                },
+                {
+                    "id": 2,
+                    "checksum": "7890abcdef12",
+                    "location": "server2"
+                }
+            ],
+            "created_at": "2023-05-14 10:30:00"
+        },
+        {
+            "filename": "file2.jpg",
+            "size": 2048,
+            "block_size": 512,
+            "checksum": "7890abcdef",
+            "blocks": [{
+                    "id": 1,
+                    "checksum": "abcdef7890",
+                    "location": "server1"
+                },
+                {
+                    "id": 2,
+                    "checksum": "abcdef1234",
+                    "location": "server2"
+                }
+            ],
+            "created_at": "2023-05-14 11:00:00"
+        }
+    ],
+    "superblocks": [{
+            "id": 1,
+            "name": "Superblock 1",
+            "blocks": [{
+                    "file_id": 1,
+                    "block_id": 1
+                },
+                {
+                    "file_id": 1,
+                    "block_id": 2
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Superblock 2",
+            "blocks": [{
+                    "file_id": 2,
+                    "block_id": 1
+                },
+                {
+                    "file_id": 2,
+                    "block_id": 2
+                }
+            ]
+        }
+    ],
+    "lastUsedServerIndex": 1
+}

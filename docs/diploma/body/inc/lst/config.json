@@ -1,0 +1,103 @@
+{
+    "servers": [{
+            "id": "1",
+            "hostname": "hostname",
+            "username": "admin",
+            "password": "qwerty",
+            "path": "/Users/dvvarin/BMSTU/xoracle-bachelors-diploma/app-blocks/s1"
+        },
+        {
+            "id": "2",
+            "hostname": "hostname",
+            "username": "admin",
+            "password": "12345",
+            "path": "/Users/dvvarin/BMSTU/xoracle-bachelors-diploma/app-blocks/s2"
+        },
+        {
+            "id": "3",
+            "hostname": "hostname",
+            "username": "admin",
+            "password": "12345Qwerty",
+            "path": "/Users/dvvarin/BMSTU/xoracle-bachelors-diploma/app-blocks/s3"
+        }
+    ],
+    "files": [{
+        "filename": "bmstu.png",
+        "size": 303268,
+        "block_size": 101090,
+        "checksum": "88ce9316b6742d6413d25ebe91fd8aa17a53",
+        "blocks": [{
+                "id": 0,
+                "checksum": "9e8f15f5a29319bacebb8fbe2b87",
+                "location": "/Users/dvvarin/BMSTU/xoracle-bachelors-diploma/app-blocks/blocks/bmstu.png.0",
+                "size": 101090
+            },
+            {
+                "id": 1,
+                "checksum": "5b9617421dfce18e9fc8957353d6",
+                "location": "/Users/dvvarin/BMSTU/xoracle-bachelors-diploma/app-blocks/blocks/bmstu.png.1",
+                "size": 101090
+            },
+            {
+                "id": 2,
+                "checksum": "c88f7b711f18e680bc5d70a16c42",
+                "location": "/Users/dvvarin/BMSTU/xoracle-bachelors-diploma/app-blocks/blocks/bmstu.png.2",
+                "size": 101088
+            }
+        ],
+        "created_at": "2023-06-08 10:45:15"
+    }],
+    "superblocks": [{
+            "id": 0,
+            "block_size": 101090,
+            "checksum": "fvso48f7b7115d70a1c8f18e46c42c4f",
+            "location": "/Users/dvvarin/BMSTU/xoracle-bachelors-diploma/app-blocks/s1/bmstu.png.0.sb",
+            "blocks": [{
+                    "id": 0,
+                    "location": "/Users/dvvarin/BMSTU/xoracle-bachelors-diploma/app-blocks/blocks/bmstu.png.0",
+                    "size": 101090
+                },
+                {
+                    "id": 1,
+                    "location": "/Users/dvvarin/BMSTU/xoracle-bachelors-diploma/app-blocks/blocks/bmstu.png.1",
+                    "size": 101090
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "block_size": 101090,
+            "checksum": "e4fvsoc8890ecb9af8cf7b711f1845d7",
+            "location": "/Users/dvvarin/BMSTU/xoracle-bachelors-diploma/app-blocks/s2/bmstu.png.1.sb",
+            "blocks": [{
+                    "id": 0,
+                    "location": "/Users/dvvarin/BMSTU/xoracle-bachelors-diploma/app-blocks/blocks/bmstu.png.1",
+                    "size": 101090
+                },
+                {
+                    "id": 1,
+                    "location": "/Users/dvvarin/BMSTU/xoracle-bachelors-diploma/app-blocks/blocks/bmstu.png.2",
+                    "size": 101088
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "block_size": 101090,
+            "checksum": "8vn3yc88f7b711f18e4fvso456c42c9d",
+            "location": "/Users/dvvarin/BMSTU/xoracle-bachelors-diploma/app-blocks/s3/bmstu.png.2.sb",
+            "blocks": [{
+                    "id": 0,
+                    "location": "/Users/dvvarin/BMSTU/xoracle-bachelors-diploma/app-blocks/blocks/bmstu.png.0",
+                    "size": 101090
+                },
+                {
+                    "id": 1,
+                    "location": "/Users/dvvarin/BMSTU/xoracle-bachelors-diploma/app-blocks/blocks/bmstu.png.2",
+                    "size": 101088
+                }
+            ]
+        }
+    ],
+    "lastUsedServerIndex": 1
+}

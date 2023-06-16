@@ -1,0 +1,104 @@
+\usepackage{csvsimple}
+\usepackage{longtable}
+\usepackage{biblatex}
+\usepackage{pdflscape}
+\usepackage{pdfpages}
+\usepackage{enumitem}
+\usepackage{color}
+\usepackage{listings}
+
+\addbibresource{main.bib}
+\lstset{frame=none, tabsize=4}
+
+\setlist[itemize]{label=---}
+
+\usepackage{xcolor}
+
+\definecolor{keywordcolor}{RGB}{0,0,255}
+\definecolor{stringcolor}{RGB}{0,128,0}
+\captionsetup[table]{justification=raggedleft,singlelinecheck=false}
+
+%\captionsetup{singlelinecheck=false, justification=raggedleft}	
+
+\lstdefinelanguage{go}{
+  % Определение списка ключевых слов
+  morekeywords={
+    package, import, func, var, const, type, struct,
+    if, else, for, range, switch, case, break, default,
+    select, go, defer, return, true, false
+  },
+  % Определение стилей для ключевых слов, комментариев и строк
+  keywordstyle=\color{keywordcolor}\bfseries,
+  commentstyle=\color{gray}\itshape,
+  stringstyle=\color{stringcolor},
+  % Другие настройки
+  basicstyle=\ttfamily\small,
+  frame=single,
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  breaklines=true,
+  showstringspaces=false,
+}
+
+%\lstdefinelanguage{Golang}%
+%  {morekeywords=[1]{package,import,func,type,struct,return,defer,panic,%
+%     recover,select,var,const,iota,},%
+%   morekeywords=[2]{string,uint,uint8,uint16,uint32,uint64,int,int8,int16,%
+%     int32,int64,bool,float32,float64,complex64,complex128,byte,rune,uintptr,%
+%     error,interface},%
+%   morekeywords=[3]{map,slice,make,new,nil,len,cap,copy,close,true,false,%
+%     delete,append,real,imag,complex,chan,},%
+%   morekeywords=[4]{for,break,continue,range,go,goto,switch,case,fallthrough,if,%
+%     else,default,},%
+%   morekeywords=[5]{Println,Printf,Error,Print,},%
+%   sensitive=true,%
+%   morecomment=[l]{//},%
+%   morecomment=[s]{/*}{*/},%
+%   morestring=[b]',%
+%   morestring=[b]",%
+%   morestring=[s]{`}{`},%
+%   }
+   
+%\lstdefinelanguage{go}{
+%  % Keywords as defined in the language grammar
+%  morekeywords=[1]{%
+%    break,default,func,interface,select,case,defer,go,map,%
+%    struct,chan,else,goto,package,switch,const,fallthrough,%
+%    if,range,type, continue,for,import,return,var},
+%  % Built-in functions
+%  morekeywords=[2]{%
+%    append,cap,close,complex,copy,delete,imag,%
+%    len,make,new,panic,print,println,real,recover},
+%  % Pre-declared types
+%  morekeywords=[3]{%
+%    bool,byte,complex64,complex128,error,float32,float64,%
+%    int,int8,int16,int32,int64,rune,string,%
+%    uint,uint8,uint16,uint32,uint64,uintptr},
+%  % Constants and zero value
+%  morekeywords=[4]{true,false,iota,nil},
+%  % Strings : "foo", 'bar', `baz`
+%  morestring=[b]{"},
+%  morestring=[b]{'},
+%  morestring=[b]{`},
+%  % Comments : /* comment */ and // comment
+%  comment=[l]{//},
+%  morecomment=[s]{/*}{*/},
+%  % Options
+%  sensitive=true
+%}
+
+%\lstset{language=Go,inputencoding=utf8,extendedchars=false,texcl,escapechar=\|,basicstyle=\ttfamily,keywordstyle=\bfseries,numbers=none,numberblanklines=false,showstringspaces=false,breaklines=true,numberstyle=\small\ttfamily,xleftmargin=\parindent,xrightmargin=1em,linewidth=0.98\linewidth}
+
+% Определение стиля для подсветки JSON
+\lstdefinelanguage{json}{
+  language=json,
+  basicstyle=\ttfamily\small,
+  commentstyle=\color{gray},
+  stringstyle=\color{blue},
+  keywordstyle=\color{red},
+  showstringspaces=false,
+  breaklines=true,
+  frame=single,
+  backgroundcolor=\color{lightgray!10},
+  captionpos=b
+}

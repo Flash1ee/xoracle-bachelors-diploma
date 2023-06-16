@@ -13,3 +13,27 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.idx
+*.ist
+*.lof
+*.log
+*.lol
+*.lot
+*.nav
+*.nls
+*.out
+*.pyg
+*.run.xml
+*.snm
+*.synctex.gz
+*.tex.backup
+*.thm
+*.toc
+*.vrb
+*.xdy
+*.xml
